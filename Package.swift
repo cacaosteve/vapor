@@ -6,6 +6,12 @@ let package = Package(
     platforms: [
        .macOS(.v10_15)
     ],
+    platforms: [
+        .macOS(.v10_12),
+        .iOS(.v13),
+        .tvOS(.v10),
+        .watchOS(.v3)
+    ],
     products: [
         .library(name: "Vapor", targets: ["Vapor"]),
         .library(name: "XCTVapor", targets: ["XCTVapor"])
