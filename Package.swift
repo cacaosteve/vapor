@@ -7,6 +7,12 @@ let package = Package(
         .library(name: "Vapor", targets: ["Vapor"]),
         .library(name: "XCTVapor", targets: ["XCTVapor"])
     ],
+    platforms: [
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .watchOS(.v6),
+        .tvOS(.v13),
+    ],
     dependencies: [
         // HTTP client library built on SwiftNIO
         .package(url: "https://github.com/swift-server/async-http-client.git", from: "1.0.0"),
